@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/*
+ * Paleta inspirada en Rick and Morty:
+ *  - portal: el verde neón del portal de Rick
+ *  - morty:  el amarillo de la camiseta de Morty
+ *  - rick:   el celeste del cabello de Rick
+ *  - space:  el fondo oscuro del espacio / multiverso
+ */
+@theme {
+  --color-portal: #97ce4c;
+  --color-portal-light: #b8e986;
+  --color-portal-dark: #5e9e2a;
+  --color-morty: #f0e14a;
+  --color-rick: #a6eee6;
+  --color-space: #0b0f1f;
+  --color-space-2: #141a33;
+  --color-space-3: #1f2748;
+  --color-space-line: #2c3663;
+
+  --font-display: "Luckiest Guy", "Comic Sans MS", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-space);
+  color: #e2e8f0;
+}
+
+/* Fondo de estrellas para las secciones "hero" */
+.bg-stars {
+  background-color: var(--color-space);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgb(151 206 76 / 0.18), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgb(166 238 230 / 0.12), transparent 40%),
+    radial-gradient(1px 1px at 10% 20%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 30% 80%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 55% 15%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 50%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 90% 25%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 45% 60%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 85% 90%, #fff 50%, transparent 51%);
+}
+
+/* Brillo verde tipo portal */
+.portal-glow {
+  box-shadow:
+    0 0 20px rgb(151 206 76 / 0.6),
+    0 0 60px rgb(151 206 76 / 0.3);
+}
